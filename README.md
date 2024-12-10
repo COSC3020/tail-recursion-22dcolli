@@ -22,7 +22,7 @@ suspected, charges may be filed against me without prior notice.”
 
 ## Note
 
-I did not complete this excersise last semester, so I am attempting this completely from scratch. I modified my recursive function from the excercise fibbonacci invarients, on that same note, the test is the same from that repo as it is a dependable test. For the analysis, I looked at what is the standard fibonacci implemenation which I got from here.(https://www.geeksforgeeks.org/javascript-program-to-display-fibonacci-sequence-using-recursion/).
+I did not complete this excersise last semester, so I am attempting this completely from scratch. I modified my recursive function from the excercise fibbonacci invarients, on that same note, the test is the same from that repo as it is a dependable test. For the analysis, I looked at what is the standard fibonacci implemenation which I got from here.(https://www.geeksforgeeks.org/javascript-program-to-display-fibonacci-sequence-using-recursion/). I also read the slides pertaining to tail recursion.
 
 ## Runtime Analysis
 
@@ -33,7 +33,7 @@ markdown file.
 
 ### Answer:
 
-I believe that the complexities of the two different versions are different. Looking at the standard non-tail-recursive version below 
+I believe that the complexities of the two different versions are different. Looking at the standard non-tail-recursive version below ,
 
 ```javascript
 function fibonacci(n) {
@@ -44,4 +44,5 @@ function fibonacci(n) {
 }
 ```
 
+We see that there are two recursive calls in that function, which leads to a complexity of $\Theta(2^n)$. When we compare that to the single recursive call made by the tail recursive verion which has a complexity of $\Theta(n)$ (because of the single call at the end) we can see that the tail recursive version is in fact different and better than the non tail recursive version.
 
